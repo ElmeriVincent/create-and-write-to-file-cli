@@ -42,7 +42,8 @@ pub fn create_and_write_to_file() -> std::io::Result<()> {
 }
 
 #[test]
-#[ignore] // cargo test -- test_file_creation_and_writing --ignored
+// Use ignore if there would be multiple test files in the future.
+//#[ignore] // cargo test -- test_file_creation_and_writing --ignored
 
 /// GIVEN: A predetermined file name and file content
 /// WHEN: The `create_and_write_to_file` function is called
